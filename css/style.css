@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #FCE2DB; */
+    background-image: linear-gradient(#fdd4c8, #fff5f5);
+    font-family: 'Dancing Script', cursive;
+}
+
+main {
+    min-height: 80vh;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.header .logo {
+    animation: logo 1s linear 0s 1 normal forwards;
+}
+
+.header a img {
+    width: 150px;
+}
+
+/* nav */
+
+.navBar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navBar .listPrin {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    list-style: none;
+    background-color: #7a44958a;
+    border-radius: 30px;
+    box-shadow: 4px 7px 37px -2px rgb(0 0 0);
+    animation: nav 1s linear 0s 1 normal forwards;
+}
+
+.navBar .listPrin .itemList {
+    color: #FCE2DB;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: bolder;
+    margin: 30px;
+    transition: .5s ease;
+}
+
+.navBar .listPrin .itemList:hover {
+    color: #633779;
+    font-size: 28px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    color: #7A4495;
+    margin: 15px 5px;
+}
+
+.footer ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-weight: bolder;
+    padding: 0;
+}
+
+.footer ul h2 {
+    margin: 10px;
+    font-size: 35px;
+    font-weight: bolder;
+    animation: redesSociales 2s ease 0s infinite normal none;
+}
+
+.footer ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    background-color: #FCE2DB;
+    color: #7A4495;
+    font-size: 25px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border: none;
+    transition: .5s ease;
+    box-shadow: 4px 7px 37px -2px rgb(0 0 0);
+}
+
+.footer ul li a:hover {
+    text-decoration: none;
+    font-size: 27px;
+    background-color: #7A4495;
+    color: #FCE2DB;
+}
+
+.footer .parrafos {
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: bolder;
+}
+
+.footer .parrafos p {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* main index */
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-index .mainPrin {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px 5px;
+    padding: 10px;
+}
+
+.main-index .mainPrin img {
+    width: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 4px 7px 37px -2px rgb(0 0 0);
+    animation: foto-pastelera 3s ease 0s 1 normal forwards;
+}
+
+
+.main-index .mainPrin .textoPrin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #7A4495;
+    text-align: center;
+    margin: 15px 5px;
+    padding: 30px;
+}
+
+.main-index .mainPrin .textoPrin h1 {
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.main-index .mainPrin .textoPrin p {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.main-index .container {
+    z-index: 0;
+}
+
+/* /* Sobre Mi  */
+
+.main-sobreMi {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-sobreMi .card {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 15px 5px;
+    padding: 10px;
+}
+
+.main-sobreMi .card .contImgCard .imgCard {
+    width: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 4px 7px 37px -2px rgb(0 0 0);
+    animation: foto-pastelera 3s ease 0s 1 normal forwards;
+}
+
+.main-sobreMi .card .cardTitulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-sobreMi .card .cardTitulo h1 {
+    text-align: center;
+    padding: 15px;
+    color: #7A4495;
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 15px 5px;
+}
+
+.main-sobreMi .card .cardTitulo p {
+    text-align: center;
+    padding: 15px;
+    color: #7A4495;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 15px 5px;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+}
+
+.videos .videosTitulo {
+    text-align: center;
+    padding: 15px;
+    color: #7A4495;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 15px 5px;
+}
+
+.videos .videosIframe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.videos .videosIframe iframe {
+    margin: 10px;
+}
+
+/* productos */
+
+.main-productos h1 {
+    padding: 5px;
+    color: #7A4495;
+    font-size: 40px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    align-items: start;
+    text-align: center;
+    justify-content: center;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+.grid-container .grid-prod img {
+    width: 310px;
+    height: 400px;
+    margin: 15px;
+    border-radius: 30px;
+    box-shadow: 4px 7px 37px -2px rgb(0 0 0);
+    transition: all 300ms;
+    position: relative;
+}
+
+.grid-container .grid-prod img:hover {
+    transform: scale(1.03);
+}
+
+.grid-container .grid-prod h3, p, h4 {
+    padding: 10px;
+    color: #7A4495;
+    font-size: 25px;
+}
+
+/* Como Comprar */
+
+.main-comocomprar {
+    color: #7A4495;
+}
+
+.main-comocomprar section h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px;
+}
+
+.main-comocomprar section ol {
+    padding-left: 50px;
+}
+
+.main-comocomprar section li {
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* Contacto */
+
+.main-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+    color: #7A4495;
+}
+
+.main-contacto h1 {
+    font-size: 50px;
+}
+
+.main-contacto .contacto {
+    display: flex;
+    align-items: center;
+    color: #4e2563;
+    font-size: 20px;
+}
+
+.contacto .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-right: 80px;
+}
+
+.contacto .form label {
+    padding: 10px;
+    color: #7A4495;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.contacto .form input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #7A4495;
+}
+
+.contacto .form input:focus {
+    outline: none;
+}
+
+.contacto .form textarea {
+    resize: none;
+    background-color: #FCE2DB;
+    color: #4e2563;
+    border: 2px solid #7A4495;
+    margin: 5px;
+}
+
+.contacto .form textarea:focus {
+    outline: none;
+}
+
+.contacto .form .btn {
+    background-color: #FCE2DB;
+    color: #7A4495;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: .5s ease;
+    box-shadow: 4px 7px 37px -2px rgb(0 0 0);
+}
+
+.contacto .form .btn:hover {
+    font-size: 21px;
+    background-color: #7A4495;
+    color: #FCE2DB;
+}
+
+.contacto .mapa {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #FCE2DB;
+    color: #7A4495;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 4px 7px 37px -2px rgb(0 0 0);
+}
+
+.contacto .mapa h2 {
+    margin-bottom: 25px;
+}
+
+/* KeyFrames */
+
+@keyframes nav {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes foto-pastelera {
+	0% {
+		opacity: 0;
+		transform: rotateY(100deg);
+		transform-origin: left;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateY(0);
+		transform-origin: left;
+	}
+}
+
+@keyframes redesSociales {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes logo {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Medias querys */
+
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 769px) {
+    .main-sobreMi .card {
+        flex-direction: column;
+    }
+
+    .main-contacto .contacto {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .header {
+        flex-direction: column;     
+    }
+
+    .navBar .listPrin .itemList {
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .main-index .mainPrin {
+       flex-flow: column;
+    }
+    
+    .main-index .mainPrin img {
+        width: 275px;
+    }
+
+    .main-index .mainPrin .textoPrin h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .main-index .mainPrin .textoPrin p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main-index .card {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .main-sobreMi .card {
+        flex-direction: column;
+    }
+
+    .main-sobreMi .card .contImgCard .imgCard {
+        width: 275px;
+    }
+
+    .main-sobreMi .card .cardTitulo h1 {
+        font-size: 28px;
+    }
+
+    .main-sobreMi .card .cardTitulo p {
+        font-size: 23px;
+    }
+
+    .main-sobreMi .videos .videosTitulo h3 {
+        font-size: 21px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-comocomprar section h1 {
+        font-size: 35px;
+    }
+
+    .main-comocomprar section li {
+        font-size: 25px;
+    }
+
+    .main-contacto .contacto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-contacto h1 {
+        font-size: 30px;
+    }
+
+    .contacto .form {
+        margin-right: 0px;
+    }
+
+    .contacto .mapa {
+       width: 320px;
+       height: 400px;
+       margin: 0;
+    }
+
+    .mapa iframe {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .footer ul h2 {
+        display: none;
+    }
+
+    .footer ul li a {
+        font-size: 20px;
+    }
+
+    .footer .parrafos p {
+        font-size: 23px;
+    }
+
+}
+
